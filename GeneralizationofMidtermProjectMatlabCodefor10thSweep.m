@@ -1034,7 +1034,7 @@ end
 
 
 
-%%%%%%%%%%%%%%%%% 1. For the First Image (FI) with 10th Sweep I[site]
+%%%%%%%%%%%%%%%%% 1. For the First Image (1I) with 1st Sweep I[site]
 
 %%%%%%%%%% There would be total 16 cases in terms of (Sigma 1, Sigma 2)
 
@@ -1042,33 +1042,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_01_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_01_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_01_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_01{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_01_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_01{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_01_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_01_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_01_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_01{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_01_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_01{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_01_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_01_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_01_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_01{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_01_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_01{i,j,1}(21);
     end
 end
 
@@ -1076,7 +1076,7 @@ end
 
 
 %% Let's Draw the 1st Original image with 1st Image with 1st, 10th, and 20th Posterior Sample Matrices of I[each site]
-%% for the 10th sweeping, and Sigma1 and Sigma2 are both 0.01 as follow:
+%% for the 1st sweeping, and Sigma1 and Sigma2 are both 0.01 as follow:
 
  subplot(2,2,1)
  colormap('gray');
@@ -1084,15 +1084,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_01_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_01_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_01_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_01_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_01_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_01_1I );
  
  
  
@@ -1101,33 +1101,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_1{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_1{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_1{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_1{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_1{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_1{i,j,1}(21);
     end
 end
 
@@ -1143,15 +1143,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_1_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_1_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_1_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_1_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_1_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_1_1I );
  
  
  
@@ -1161,11 +1161,11 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_5_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_5_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_5_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_5{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_5_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_5{i,j,1}(2);
     end
 end
 
@@ -1173,22 +1173,22 @@ end
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_5_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_5_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_5_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_5{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_5_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_5{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_5_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_5_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_5_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_5{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_5_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_0_5{i,j,1}(21);
     end
 end
 
@@ -1204,15 +1204,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_5_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_0_5_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_5_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_5_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_5_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_0_5_1I );
  
  
  
@@ -1222,11 +1222,11 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_1{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_1{i,j,1}(2);
     end
 end
 
@@ -1234,22 +1234,22 @@ end
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_1{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_1{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_1{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_01_Sigma_of_W_1{i,j,1}(21);
     end
 end
 
@@ -1265,15 +1265,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_1_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_01_Sigma_of_W_1_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_1_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_1_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_1_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_01_Sigma_of_W_1_1I );
  
  
  
@@ -1283,11 +1283,11 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_01_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_01_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_01_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_01{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_01_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_01{i,j,1}(2);
     end
 end
 
@@ -1295,22 +1295,22 @@ end
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_01_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_01_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_01_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_01{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_01_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_01{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_01_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_01_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_01_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_01{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_01_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_01{i,j,1}(21);
     end
 end
 
@@ -1326,15 +1326,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_01_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_01_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_01_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_01_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_01_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_01_1I );
  
  
  
@@ -1344,33 +1344,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_1{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_1{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_1{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_1{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_1{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_1{i,j,1}(21);
     end
 end
 
@@ -1386,15 +1386,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_1_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_1_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_1_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_1_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_1_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_1_1I );
  
  
  
@@ -1404,33 +1404,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_5_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_5_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_5_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_5{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_5_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_5{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_5_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_5_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_5_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_5{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_5_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_5{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_5_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_5_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_5_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_5{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_5_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_0_5{i,j,1}(21);
     end
 end
 
@@ -1446,15 +1446,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_5_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_0_5_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_5_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_5_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_5_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_0_5_1I );
  
  
  
@@ -1464,33 +1464,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_1{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_1{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_1{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_1{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_1{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_1_Sigma_of_W_1{i,j,1}(21);
     end
 end
 
@@ -1506,15 +1506,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_1_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_1_Sigma_of_W_1_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_1_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_1_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_1_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_1_Sigma_of_W_1_1I );
  
  
  
@@ -1524,33 +1524,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_01_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_01_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_01_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_01{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_01_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_01{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_01_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_01_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_01_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_01{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_01_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_01{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_01_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_01_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_01_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_01{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_01_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_01{i,j,1}(21);
     end
 end
 
@@ -1566,15 +1566,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_01_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_01_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_01_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_01_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_01_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_01_1I );
  
  
  
@@ -1584,33 +1584,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_1{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_1{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_1{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_1{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_1{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_1{i,j,1}(21);
     end
 end
 
@@ -1626,15 +1626,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_1_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_1_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_1_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_1_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_1_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_1_1I );
  
  
  
@@ -1644,33 +1644,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_5_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_5_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_5_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_5{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_5_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_5{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_5_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_5_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_5_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_5{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_5_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_5{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_5_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_5_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_5_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_5{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_5_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_0_5{i,j,1}(21);
     end
 end
 
@@ -1686,15 +1686,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_5_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_0_5_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_5_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_5_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_5_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_0_5_1I );
  
  
  
@@ -1704,33 +1704,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_1{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_1{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_1{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_1{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_1{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_0_5_Sigma_of_W_1{i,j,1}(21);
     end
 end
 
@@ -1746,15 +1746,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_1_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_0_5_Sigma_of_W_1_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_1_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_1_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_1_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_0_5_Sigma_of_W_1_1I );
  
  
  
@@ -1764,33 +1764,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_01_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_01_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_01_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_01{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_01_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_01{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_01_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_01_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_01_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_01{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_01_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_01{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_01_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_01_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_01_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_01{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_01_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_01{i,j,1}(21);
     end
 end
 
@@ -1806,15 +1806,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_01_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_01_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_01_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_01_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_01_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_01_1I );
  
  
  
@@ -1824,33 +1824,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_1{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_1{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_1{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_1{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_1{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_1{i,j,1}(21);
     end
 end
 
@@ -1866,15 +1866,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_1_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_1_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_1_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_1_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_1_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_1_1I );
  
  
  
@@ -1884,33 +1884,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_5_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_5_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_5_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_5{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_5_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_5{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_5_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_5_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_5_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_5{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_5_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_5{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_5_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_5_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_5_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_5{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_5_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_0_5{i,j,1}(21);
     end
 end
 
@@ -1926,15 +1926,15 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_5_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_0_5_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_5_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_5_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_5_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_0_5_1I );
  
  
  
@@ -1945,33 +1945,33 @@ end
 
 %% Let's gather 1st Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_1{i,j,1}(2);
+        Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_1{i,j,1}(2);
     end
 end
 
 
 %% Let's gather 10th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_1{i,j,1}(11);
+        Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_1{i,j,1}(11);
     end
 end
 
 
 %% Let's gather 20th Posterior Sample of I[Each Site] in the above obtained 60 X 90 Posterior Sample Cell as follow:
 
-Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_1_FI = zeros(60,90); %% Initialize the matrix with zero elements.
+Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_1_1I = zeros(60,90); %% Initialize the matrix with zero elements.
 
 for i = 1:60
     for j = 1:90
-        Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_1_FI(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_1{i,j,1}(21);
+        Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_1_1I(i,j)=Posterior_Sample_Cell_with_Sigma_of_I_1_Sigma_of_W_1{i,j,1}(21);
     end
 end
 
@@ -1987,15 +1987,17 @@ end
  
  subplot(2,2,2)
  colormap('gray');
- imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_1_FI );
+ imagesc( Matrix_1st_Post_Samples_with_Sigma_of_I_1_Sigma_of_W_1_1I );
  
  subplot(2,2,3)
  colormap('gray');
- imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_1_FI );
+ imagesc( Matrix_10th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_1_1I );
  
  subplot(2,2,4)
  colormap('gray');
- imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_1_FI );
+ imagesc( Matrix_20th_Post_Samples_w_Sigma_of_I_1_Sigma_of_W_1_1I );
+ 
+ 
  
  
  
